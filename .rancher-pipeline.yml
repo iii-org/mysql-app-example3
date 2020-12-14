@@ -13,7 +13,12 @@ stages:
           # 這裡是為了告訴要處理的git來源為何
           git.repoName: ${CICD_GIT_REPO_NAME}
           git.branch: ${CICD_GIT_BRANCH}
+          # 使用者參數(部屬) 預設都是true
+          db.enabled: true
+          db.gui: true
+          # 使用者參數(資料庫)
           db.type: mysql
+          db.tag: latest
           # 使用者資料庫管理密碼
           db.username: bear33
           db.password: bearisbear33
